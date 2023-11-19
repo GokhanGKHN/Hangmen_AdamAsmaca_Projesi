@@ -1,12 +1,12 @@
 import random
-from hangman_words import word_list
+import hangman_words
 from hangman_art import stages
 from hangman_art import logo
 
 
 
 #Delete this line: word_list = ["ardvark", "baboon", "camel"]
-chosen_word = random.choice(word_list)
+chosen_word = random.choice(hangman_words.word_list)
 word_length = len(chosen_word)
 
 end_of_game = False
